@@ -2,7 +2,7 @@ from socket import *
 import sys
 
 HOST = ''
-PORT = 5008
+PORT = 5010
 PORT_IN = 5009
 ADDRESS = "255.255.255.255"
 
