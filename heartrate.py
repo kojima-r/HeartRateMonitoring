@@ -58,7 +58,7 @@ def worker(event: threading.Event):
             #time.sleep(1)
             print("listen")
             msg, address = s.recvfrom(64)
-            if msg[0] == ".":
+            if len(msg) != 0 and msg[0] == ".":
                 print("Sender is closed")
                 break
             if event.is_set():
